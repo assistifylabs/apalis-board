@@ -1,9 +1,10 @@
 {
-    "public": "dist/static",
-    "rewrites": [
-        {
-            "source": "*",
-            "destination": "/index.html"
-        }
-    ]
+  "public": "../../../../../target/apalisui/dist/static",
+  "rewrites": [
+    {
+      "source": "*",
+      "destination": "/index.html"
+    }
+  ]
 }
+

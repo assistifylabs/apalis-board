@@ -20,7 +20,7 @@ module.exports = (env) => {
     devtool: isProd ? false : 'eval-cheap-module-source-map',
     entry: ['./src/index.tsx'],
     output: {
-      path: path.resolve(__dirname, './dist/static'),
+      path: path.resolve(__dirname, '../../../../../target/apalisui/dist/static'),
       filename: `[name]${isProd ? '.[contenthash]' : ''}.js`,
       publicPath: `${isProd ? basePath : `http://localhost:${devServerPort}`}/static/`,
       publicPath: 'auto',
@@ -29,7 +29,7 @@ module.exports = (env) => {
       extensions: ['.ts', '.tsx', '.js', '.jsx'],
       alias: {
         Typings: path.resolve(__dirname, 'typings'),
-      }
+      },
     },
     module: {
       rules: [
@@ -115,5 +115,5 @@ module.exports = (env) => {
         writeToDisk: true,
       },
     },
-  }
+  };
 };
